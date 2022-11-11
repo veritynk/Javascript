@@ -1,62 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="swiper.min.css">
-
-    <link rel="stylesheet" href="carousel.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
 </head>
 <body>
-    <section class="main swiper mySwiper">
-        <div class="wrapper swiper-wrapper">
-            <div class="slide swiper-slide">
-                <img src="One.jpg" alt="Dinner" class="image">
-            </div>
-             <div class="slide swiper-slide">
-                <img src="Two.jpg" alt="Dinner" class="image">
-            </div>
-             <div class="slide swiper-slide">
-                <img src="Three.jpg" alt="Dinner" class="image">
-            </div>
-             <div class="slide swiper-slide">
-                <img src="Four.jpg" alt="Dinner" class="image">
-            </div>
-             <div class="slide swiper-slide">
-                <img src="Five.jpg" alt="Dinner" class="image">
-            </div>
-             <div class="slide swiper-slide">
-                <img src="Six.jpg" alt="Dinner" class="image">
-            </div>
-        </div>
-
-        <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </section>
-
-     <!-- Swiper JS -->
-     <script src="swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+  <section aria-label="Newest Photos">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+        </li>
+        <li class="slide">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Nature Image #4">
+        </li>
+        <li class="slide">
+          <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Nature Image #5">
+        </li>
+        <li class="slide">
+          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80" alt="Nature Image #6">
+        </li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
